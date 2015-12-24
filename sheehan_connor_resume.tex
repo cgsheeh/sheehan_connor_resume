@@ -10,7 +10,7 @@
 
 % moderncv themes
 \moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
-\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+\moderncvcolor{burgundy}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -25,18 +25,18 @@
 
 % personal data
 \name{Connor}{Sheehan}
-\title{Student}                               % optional, remove / comment the line if not wanted
-\address{144 Westwood Avenue}{Hamilton, Ontario}{Canada}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+%\texttt{\texttt{•}}\title{McMaster University}                               % optional, remove / comment the line if not wanted
+%\address{144 Westwood Avenue}{Hamilton, Ontario}{Canada}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+1~(905)~767~6049}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 \phone[fixed]{+1~(905)~666~4825}
 \email{sheehacg@mcmaster.ca}                               % optional, remove / comment the line if not wanted
 %\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
 %\social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
-\social[twitter]{@connorsheehan_}                             % optional, remove / comment the line if not wanted
-\social[github]{cgsheeh}                              % optional, remove / comment the line if not wanted
+\social[twitter]{@connorsheehan\_}                             % optional, remove / comment the line if not wanted
+\social[github][www.github.com/cgsheeh]{github.com/cgsheeh}                              % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
 % bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
 %   to show numerical labels in the bibliography (default is to show no labels)
@@ -55,12 +55,15 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
+\section{Highlights of Qualifications}
+\cvlistitem{Enrolled in the Software Engineering and Co-Op Program at McMaster University}
+\cvlistitem{}
+
 \section{Education}
-\cventry{2013--Present}{Bachelor of Engineering (Software)}{McMaster University}{Hamilton}{\textit{Level III}}{Full time student studying six courses per term}  % arguments 3 to 6 can be left empty
+\cventry{2013--Present}{Bachelor of Engineering (Software)}{McMaster University}{Hamilton}{\textit{Level 3 of 4}}{Full time student studying six courses per term}  % arguments 3 to 6 can be left empty
 %\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 
-\section{Experience}
-\subsection{Vocational}
+\section{Relevant Experience}
 \cventry{May--August 2013--2014}{University of Ontario, Institiute of Technology}{Computer Imaging Assistant}{Oshawa}{}{Summer employment opportunity assisting full time imagers in the laptop image creation and deployment process.\newline{}%
 Responsibilities included:%
 \begin{itemize}%
@@ -78,33 +81,31 @@ Responsibilities included:%
 \end{itemize}
 }
 
-\subsection{Miscellaneous}
+\section{Additional Experience}
 \cventry{2010-2013}{Grocery Clerk}{Justin's No Frills}{Whitby}{}{Stocked shelves and maintained inventory}
 
-\section{Languages}
-\cvitemwithcomment{Language 1}{Skill level}{Comment}
-\cvitemwithcomment{Language 2}{Skill level}{Comment}
-\cvitemwithcomment{Language 3}{Skill level}{Comment}
+\section{Skills}
+\subsection{Programming Languages}
+\cvitemwithcomment{C Sharp}{Skill level}{Comment}
+\cvitemwithcomment{Python 2/3}{Skill level}{Comment}
+\cvitemwithcomment{Java}{Skill level}{Comment}
+\cvitemwithcomment{AutoIT}{Skill level}{Comment}
+\cvitemwithcomment{NASM Assembly}{Skill level}{Comment}
+\cvitemwithcomment{Java}{Skill level}{Comment}
+\cvitemwithcomment{Bash Scripting}{Skill level}{Comment}
+\cvitemwithcomment{Powershell}{Skill level}{Comment}
 
-\section{Computer skills}
-\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
-\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+\subsection{Other Skills}
+\cvdoubleitem{\textbf{Operating Systems}}{Windows (7/8/10), Linux (Ubuntu)}{\textbf{Command Line}}{Bash, PowerShell}
+\cvdoubleitem{\textbf{Office}}{Excel, Powerpoint, Word}{category 5}{XXX, YYY, ZZZ}
 \cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
-
-\section{Interests}
-\cvitem{hobby 1}{Description}
-\cvitem{hobby 2}{Description}
-\cvitem{hobby 3}{Description}
-
-\section{Extra 1}
-\cvlistitem{Item 1}
-\cvlistitem{Item 2}
-\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
 
 \section{Soft Skills}
 \cvlistdoubleitem{}{Item 4}
 \cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
 \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+\section{Extracurricular Activities and Student Memberships}
 
 \section{References}
 \begin{cvcolumns}
