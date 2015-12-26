@@ -10,7 +10,7 @@
 
 % moderncv themes
 \moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
-\moderncvcolor{burgundy}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+\moderncvcolor{grey}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -28,11 +28,11 @@
 %\texttt{\texttt{•}}\title{McMaster University}                               % optional, remove / comment the line if not wanted
 %\address{144 Westwood Avenue}{Hamilton, Ontario}{Canada}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+1~(905)~767~6049}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-\phone[fixed]{+1~(905)~666~4825}
+%\phone[fixed]{+1~(905)~666~4825}
 \email{sheehacg@mcmaster.ca}                               % optional, remove / comment the line if not wanted
 %\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
 %\social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
-\social[twitter]{@connorsheehan\_}                             % optional, remove / comment the line if not wanted
+%\social[twitter]{@connorsheehan\_}                             % optional, remove / comment the line if not wanted
 \social[github][www.github.com/cgsheeh]{github.com/cgsheeh}                              % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
@@ -57,48 +57,64 @@
 
 \section{Highlights of Qualifications}
 \cvlistitem{Enrolled in the Software Engineering and Co-Op Program at McMaster University}
-\cvlistitem{}
+\cvlistitem{Multiple years experience in an IT work environment}
+\cvlistitem{Fast learner with a strong work ethic}
+\cvlistitem{Approachable and collaborative team player willing to assume leadership roles}
 
 \section{Education}
-\cventry{2013--Present}{Bachelor of Engineering (Software)}{McMaster University}{Hamilton}{\textit{Level 3 of 4}}{Full time student studying six courses per term}  % arguments 3 to 6 can be left empty
+\cventry{2013--Present}{Bachelor of Engineering (Software)}{McMaster University}{Hamilton}{\textit{Level III}}{
+\textbf{\\Relevant Projects and Course Work}
+\begin{itemize}
+\item
+Implemented a spell checking application in Java using  a ternary search trie for immediate lookups on a 650,000 word dictionary.
+\item
+Implemented a Connect Four game in Java with game saving and a computer opponent using the Model-View-Controller architectual pattern
+\item
+Managed an open source Python redevelopment project of the \textit{OpenBazaar} application with a focus on documentation and implementation techniques. Completed work included specifying Requirements, creating a Module Guide, automatically generating a Module Interface Specification from source code, creating a test plan with report, implementing a GUI and creating a setup script to install dependencies\\
+\end{itemize}
+}  % arguments 3 to 6 can be left empty
 %\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 
 \section{Relevant Experience}
-\cventry{May--August 2013--2014}{University of Ontario, Institiute of Technology}{Computer Imaging Assistant}{Oshawa}{}{Summer employment opportunity assisting full time imagers in the laptop image creation and deployment process.\newline{}%
+\cventry{May--August 2013--2014}{University of Ontario Institiute of Technology - ITServices}{Software Imaging Assistant}{Oshawa}{}{Summer employment opportunity assisting full time imagers in the laptop image creation and deployment process.\newline{}%
 Responsibilities included:%
 \begin{itemize}%
-\item Preparing image development machines with required software specific to each individual program of study;
+\item Building development images with required software specific to each individual program of study;
 \item Capturing laptop physical disks to virtual images using Symantec Ghost;
-\item Deploying software images to thousands of laptops for student use;
+\item Deploying software images to thousands of laptops for student use;\\
 \end{itemize}}
 
-\cventry{May--August 2015}{University of Ontario, Institiute of Technology}{Software Packager}{Oshawa}{}{Prepared hundreds of software titles for deployment through LANDesk Asset Management Portal\newline{}%
+\cventry{May--August 2015}{University of Ontario Institiute of Technology - ITServices}{Software Packager}{Oshawa}{}{Prepared hundreds of software titles for deployment through LANDesk Asset Management Portal\newline{}%
 Responsibilities included:%
 \begin{itemize}%
-\item Creating install and setup scripts for hundreds of software titles;
-\item Testing software deployments on virtual machine infrastructure;
-\item Creating an automated virtual test suite for software deployments;
+\item Creating install and setup scripts for hundreds of software titles using AutoIT and VBScript;
+\item Testing and verifying software deployments on virtual machine infrastructure;
+\item Creating an automated virtual test suite for software deployments in C\#;
 \end{itemize}
 }
 
 \section{Additional Experience}
-\cventry{2010-2013}{Grocery Clerk}{Justin's No Frills}{Whitby}{}{Stocked shelves and maintained inventory}
+\cventry{2010-2013}{Justin's No Frills}{Grocery Clerk}{Whitby}{}{Stocked shelves and maintained inventory while attending high school}
 
 \section{Skills}
 \subsection{Programming Languages}
-\cvitemwithcomment{C Sharp}{Skill level}{Comment}
-\cvitemwithcomment{Python 2/3}{Skill level}{Comment}
-\cvitemwithcomment{Java}{Skill level}{Comment}
-\cvitemwithcomment{AutoIT}{Skill level}{Comment}
-\cvitemwithcomment{NASM Assembly}{Skill level}{Comment}
-\cvitemwithcomment{Java}{Skill level}{Comment}
-\cvitemwithcomment{Bash Scripting}{Skill level}{Comment}
-\cvitemwithcomment{Powershell}{Skill level}{Comment}
+\cvitem{C\#}{Created automated test suite at UOIT}
+\cvitem{Python 2/3}{First language learned}
+\cvitem{Java}{Implemented multiple schools projects and assignments}
+\cvitem{AutoIT}{Implemented hundreds of software deployment packages}
+\cvitem{VBScript}{Implemented hundreds of software deployment packages}
+\cvitem{NASM Assembly}{Implemented the recursive algorithm for Towers of Hanoi}
+\cvitem{Bash Scripting}{Basic understanding.}
+\cvitem{Powershell}{Basic understanding.}
+\cvitem{\LaTeX}{Typeset many school assignments and homework submissions}
+
+\subsection{Computer Skills}
+\cvlistitem{Git}
+\cvlistitem{Bash Console}
+\cvlistitem{Powershell Console}
 
 \subsection{Other Skills}
-\cvdoubleitem{\textbf{Operating Systems}}{Windows (7/8/10), Linux (Ubuntu)}{\textbf{Command Line}}{Bash, PowerShell}
-\cvdoubleitem{\textbf{Office}}{Excel, Powerpoint, Word}{category 5}{XXX, YYY, ZZZ}
-\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
 
 \section{Soft Skills}
 \cvlistdoubleitem{}{Item 4}
@@ -106,13 +122,14 @@ Responsibilities included:%
 \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
 
 \section{Extracurricular Activities and Student Memberships}
+\cvlistdoubleitem{Fitness and weightlifting}{Hockey}
+\cvlistdoubleitem{Hanging out with friends}{Chess}
+\cvlistdoubleitem{Music}{Cycling}
 
-\section{References}
-\begin{cvcolumns}
-  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
-  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
-  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
-\end{cvcolumns}
+% This line dictates that references will be provided if requested
+\begin{center}
+\textit{References available upon request.}
+\end{center}
 
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
