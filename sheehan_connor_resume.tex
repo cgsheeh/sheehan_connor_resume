@@ -46,13 +46,51 @@
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
+
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Production Engineering Department}{Facebook, Inc\\1 Hacker Way\\Menlo Park, California}
+\date{January 24th, 2016}
+\opening{To Whom It May Concern,}
+\closing{Best regards,}
+\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+\textbf{RE: Production Engineer, Intern/Co-Op (2015)}
+
+\small{
+With regard to the above opportunity, I am forwarding my resume for your consideration.
+
+I am currently enrolled in my third year of the Software Engineering and Co-Op program at McMaster University in Hamilton, Ontario. My education has provided me with many skills and experiences that a production engineer must possess to be able to move fast and tackle complex problems. Courses from basic programming to concurrent software design have given me a structured method of developing my technical abilities and supplementing my personal experimentations. Due to this exposure, I have the ability to rapidly learn new development languages as well as pick up frameworks and APIs. In line with Facebook's core belief in making the world more open and connected, I completed a project of redeveloping the groundbreaking \textit{OpenBazaar} application using engineering methods and tools. 
+
+For the past three summers, I have been employed at the University of Ontario Institute of Technology. In my first two summers I was a computer imaging assistant. My role was to assist three full time computer imaging technologists in the development of desktop and laptop images for institutionally owned computers, as well as work with other student employees in an imaging lab to prepare thousands of computers for distribution. This experience allowed me to learn many details about large scale imaging, which will be invaluable in a Production Engineering position. The third summer I was given a promotion to software packager. Responsibilities included gathering licensing and installation files for software titles and compiling an installation script for automated deployments through the LANDesk Management Suite. During this time, when image configurations were updated some deployments would break, leading to many support calls. In collaboration with my colleague, I reverse engineered the deployment portal and built an automated test suite; this resulted in fewer support calls and reduced workload as the testing could now be performed without monitoring.
+
+
+I would be extremely interested in joining your team for a co-op term to learn from a group of people equally as enthusiastic as I am. I look forward to hearing from you to discuss my skills and qualifications further. Please contact me via my email or phone number. Thank you for considering me in this position.}
+
+
+\makeletterclosing
+
+\clearpage
+
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
+\section{Objective}
+Seeking a challenging software engineering opportunity developing and documenting some of the world's largest and most complex systems.
+
+\hspace{1cm}
+
+\section{Highlights of Qualifications}
+\cvlistitem{Upcoming B. Eng graduate offering a strong foundation in software engineering principles.}
+\cvlistitem{An excellent problem solver, able to swiftly troubleshoot problems and quickly master new frameworks and APIs.}
+\cvlistitem{An effective communicator, able to competently collaborate with both technical and non-technical individuals.}
+
+\hspace{1cm}
 
 \section{Education}
-\cventry{2013--Present}{Bachelor of Engineering (Software)}{McMaster University}{Hamilton}{\textit{Level III}}{
+\cventry{2013--Present}{Bachelor of Engineering and Co-Op (Software)}{McMaster University}{Hamilton}{\textit{Third Year}}{
 \textbf{\\Relevant Projects and Course Work}
 \begin{itemize}
 \item
@@ -60,40 +98,53 @@ Implemented a spell checking application in Java using a ternary search trie for
 \item
 Implemented a Connect Four game in Java, with game saving capabilities and a computer opponent using the Model-View-Controller architectural pattern.
 \item
-Managed an open source Python redevelopment project of the \textit{OpenBazaar} application with a focus on documentation and implementation techniques. Completed work included specifying Requirements, creating a Module Guide, automatically generating a Module Interface Specification from source code, creating a test plan with report, implementing a GUI and creating a setup script to install dependencies.\\%this \\ is to space out entries
+Managed an open source Python redevelopment project of the \textit{OpenBazaar} application with a focus on documentation and implementation techniques. Completed work included specifying requirements, creating a module guide, automatically generating a module interface specification from source code, creating a test plan with report, implementing a GUI and creating a setup script to install dependencies.
 \end{itemize}
 }  % arguments 3 to 6 can be left empty
 %\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 
+\hspace{1cm}
+
 \section{Experience}
-\cventry{May--August 2015}{University of Ontario Institiute of Technology - ITServices}{Software Packager}{Oshawa}{}{Prepared hundreds of software titles for deployment through LANDesk Asset Management Portal%
+\cventry{May--August 2015}{University of Ontario Institiute of Technology - ITServices}{Software Packager}{Oshawa}{}{%
 \begin{itemize}%
 \item Created and tested automated setup scripts for hundreds of software deployment titles, reducing the volume of support calls while maintaining software availability for students and faculty.
-\item Tested and verified software deployments through LANDesk Asset Management Portal on virtual machine infrastructure.
-\item Reverse engineered an automated virtual test suite for software deployments utilizing a C\# wrapper for VMWare VIX API, reducing overall workload for testers and increasing testing frequency.\\
+\item Tested and verified software deployments through LANDesk Asset Management Portal on virtual machine infrastructure, while learning many new software deployment technologies.
+\item Reverse engineered an automated virtual test suite for software deployments utilizing a C\# wrapper for VMWare VIX API, reducing overall workload for testers and increasing testing frequency.
 \end{itemize}
 }
-
+\clearpage{}
 \cventry{May--August 2013 \& 2014}{University of Ontario Institiute of Technology - ITServices}{Software Imaging Assistant}{Oshawa}{}{
 \begin{itemize}%
 \item Assisted in the laptop image creation and deployment process for the Technology Enriched Learning Environment.
 \item Built development images with required application and operating system configurations specific to each individual program of study.
 \item Capturing laptop physical disks to virtual images using Symantec Ghost and WinPE.
-\item Systematically deployed software images to thousands of laptops for student use, while monitoring network throughput and server performance to maximize efficiency.
+\item Systematically deployed software images to thousands of laptops for student use, while monitoring network throughput and server performance to maximize efficiency.\\
 \end{itemize}}
 
-
+\cventry{2009--2013}{Justin's No Frills}{Grocery Clerk}{Whitby}{}{\cvlistitem{Worked 20-35 hours weekly while attending high school full time, stocking shelves and providing quality customer service.}}
+\hspace{1cm}
 \section{Skills}
 \subsection{Programming Languages}
 \cvlistitem{Proficient with Java, Python 2/3, C\#, AutoIT, Bash Scripting and \LaTeX.}
 \cvlistitem{Experience with VBScript, Powershell Scripting, MATLAB, NASM Assembly, C, JavaScript, jQuery, HTML, CSS.}
 \cvlistitem{Able to learn new languages quickly.}
 
+\hspace{1cm}
+
 \subsection{Other Computer Skills}
 \cvlistitem{Proficient with Windows and Linux operating systems.}
 \cvlistitem{Microsoft Office Suite (Excel, Word, Powerpoint).}
 \cvlistitem{Git.}
 \cvlistitem{Knowledgeable with command line interface.}
+
+\hspace{1cm}
+
+\section{Personal Interests}
+\cvlistitem{Fitness enthusiast with an emphasis on strength training and self improvement.}
+\cvlistitem{Former minor league representative hockey player for ten years.}
+\cvlistitem{Recreational gamer and chess player.}
+\cvlistitem{Avid learner and personal researcher with a curiosity for all things technology and software related.}
 
 \iffalse
 \section{Soft Skills}
@@ -103,6 +154,7 @@ Managed an open source Python redevelopment project of the \textit{OpenBazaar} a
 \cvlistitem{Excellent interpersonal and customer service skills.}
 \cvlistitem{Team player}
 \fi
+
 
 
 % This line dictates that references will be provided if requested
@@ -115,31 +167,4 @@ Managed an open source Python redevelopment project of the \textit{OpenBazaar} a
 \bibliographystyle{plain}
 \bibliography{publications}                        % 'publications' is the name of a BibTeX file
 
-
-\clearpage
-%-----       letter       ---------------------------------------------------------
-% recipient data
-\recipient{Production Engineering Department}{Facebook, Inc\\1 Hacker Way\\Menlo Park, California}
-\date{January 24th, 2016}
-\opening{To Whom It May Concern,}
-\closing{Best regards,}
-\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
-\makelettertitle
-
-\textbf{RE: Production Engineer, Intern/Co-op (2015)}
-
-\small{
-With regard to the above opportunity, I am forwarding my resume for your consideration.
-
-I am currently enrolled in my third year of the Software Engineering and Co-Op program at McMaster University in Hamilton, Ontario. 
-
-My education has provided me with many skills and experiences that a production engineer must possess to be able to move fast and tackle complex problems. Courses from basic programming to concurrent software design have given me a structured method of developing my technical abilities, supplementing my personal experimentations. Due to this exposure, I have the ability to rapidly learn new development languages as well as pick up frameworks and APIs. In line with Facebook's core belief in making the world more open and connected, I completed a project of redeveloping the groundbreaking \textit{OpenBazaar} application using engineering methods and tools. 
-
-For the past three summers, I have been employed at the University of Ontario Institute of Technology. In my first two summers I was a computer imaging assistant. My role was to assist three full time computer imaging technologists in the development of desktop and laptop images for institutionally owned computers, as well as work with other student employees in an imaging lab to prepare thousands of computers for distribution. This experience allowed me to learn many details about large scale imaging, which will be invaluable in a Production Engineering position. The third summer I was given a promotion to software packager. My responsibility was to gather licensing and installation files for software titles and compile an installation script for automated deployments through the LANDesk Management Suite. During this time, when image configurations were updated some deployments would break, leading to many support calls. A colleague and I reverse engineered the deployment portal and built an automated test suite; this lead to fewer support calls and reduced workload as the testing could now be done unmanned.
-
-
-I would be extremely interested in joining your team for a co-op term to learn from a group of people equally as enthusiastic as I am. I look forward to hearing from you to discuss my skills and qualifications further. Please contact me via my email or phone number. Thank you for considering me in this position.}
-
-
-\makeletterclosing
 \end{document}
