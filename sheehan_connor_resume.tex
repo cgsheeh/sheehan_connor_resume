@@ -46,43 +46,52 @@
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
+\iffalse
 %-----       letter       ---------------------------------------------------------
 % recipient data
-\recipient{Production Engineering Department}{Facebook, Inc\\1 Hacker Way\\Menlo Park, California}
-\date{January 24th, 2016}
-\opening{To Whom It May Concern,}
+\recipient{Release Engineering Department}{Mozilla Foundation\\366 Adelaide Street West\\Toronto, Ontario\\M5V 1R9}
+\date{January 28\textsuperscript{th}, 2016}
+\opening{Dear Hiring Manager,}
 \closing{Best regards,}
 \enclosure[Attached]{resume}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
 \makelettertitle
 
-\textbf{RE: Production Engineer, Intern/Co-Op (2015)}
+\textbf{RE: Build and Release Intern - Toronto (ID: ofA51fwF)}
 
-\small{
-With regard to the above opportunity, I am forwarding my resume for your consideration.
+\iffalse
+To whom it may concern,
 
-I am currently enrolled in my third year of the Software Engineering and Co-Op program at McMaster University in Hamilton, Ontario. My education has provided me with many skills and experiences that a production engineer must possess to be able to move fast and tackle complex problems. Courses from basic programming to concurrent software design have given me a structured method of developing my technical abilities and supplementing my personal experimentations. Due to this exposure, I have the ability to rapidly learn new development languages as well as pick up frameworks and APIs. In line with Facebook's core belief in making the world more open and connected, I completed a project of redeveloping the groundbreaking \textit{OpenBazaar} application using engineering methods and tools. 
+My name is Connor Sheehan, I am an engineering student at McMaster University in Hamilton, Ontario. I believe that in the formal sense, engineering is the application of mathematics and physical sciences to solve complex, open ended problems. In practice, engineering is the development and optimization of products that make human life better and benefit society as a whole. The Mozilla Foundation has always been a glowing example of excellence in engineering  and social enrichment, setting a standard to which others strive to achieve. If I were afforded the opportunity to work at Mozilla, I would hope to develop my technical knowledge while contributing to a team of professionals who embody the principles of the Mozilla Manifesto. Internet accessibility is a force for empowerment, a tool for revolution and one of the most important movements of our time - and I would love to begin my engineering career contributing to the cause.
 
-For the past three summers, I have been employed at the University of Ontario Institute of Technology. In my first two summers I was a computer imaging assistant. My role was to assist three full time computer imaging technologists in the development of desktop and laptop images for institutionally owned computers, as well as work with other student employees in an imaging lab to prepare thousands of computers for distribution. This experience allowed me to learn many details about large scale imaging, which will be invaluable in a Production Engineering position. The third summer I was given a promotion to software packager. Responsibilities included gathering licensing and installation files for software titles and compiling an installation script for automated deployments through the LANDesk Management Suite. During this time, when image configurations were updated some deployments would break, leading to many support calls. In collaboration with my colleague, I reverse engineered the deployment portal and built an automated test suite; this resulted in fewer support calls and reduced workload as the testing could now be performed without monitoring.
+Within Mozilla, I feel that I am an excellent fit for the build and release intern position due to my education as well as my work experience. I am currently completing my third year of the software engineering program at McMaster University in Hamilton, Ontario. During this time I have practiced the fundamental principles of software engineering that will give me the ability to learn more advanced concepts effectively. In the workplace, I have been a part of a team of imagers building and deploying operating system configurations to thousands of laptops. I have also worked as a software packager, during which I created and deployed automated setup scripts for educational software titles. I also implemented a virtualized test environment to increase automation and efficiency. Both of these positions, combined with my education is what makes me confident that I will be able to make an impact as an intern at Mozilla.
+
+I would be extremely interested in joining the build and release team at Mozilla for a co-op term to learn from a group of people equally as enthusiastic as I am. I look forward to hearing from you to discuss my skills and qualifications further. Please contact me via my email (sheehacg@mcmaster.ca) or mobile phone number (905 767 6049). Thank you for considering me in this position.
 
 
-I would be extremely interested in joining your team for a co-op term to learn from a group of people equally as enthusiastic as I am. I look forward to hearing from you to discuss my skills and qualifications further. Please contact me via my email or phone number. Thank you for considering me in this position.}
+Best regards,
 
+Connor Sheehan
+\fi
 
 \makeletterclosing
 
 \clearpage
 
+\fi
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
 \section{Objective}
-Seeking a challenging software engineering opportunity developing and documenting some of the world's largest and most complex systems.
+\begin{center}
+Seeking a challenging software engineering opportunity developing, testing and automating tools in a collaborative community of thinkers and builders.
+\end{center}
+
 
 \hspace{1cm}
 
 \section{Highlights of Qualifications}
-\cvlistitem{Upcoming B. Eng graduate offering a strong foundation in software engineering principles.}
+\cvlistitem{Upcoming B.Eng graduate offering a strong foundation in software engineering principles.}
 \cvlistitem{An excellent problem solver, able to swiftly troubleshoot problems and quickly master new frameworks and APIs.}
 \cvlistitem{An effective communicator, able to competently collaborate with both technical and non-technical individuals.}
 
@@ -117,7 +126,7 @@ Managed an open source Python redevelopment project of the \textit{OpenBazaar} a
 \begin{itemize}%
 \item Assisted in the laptop image creation and deployment process for the Technology Enriched Learning Environment.
 \item Built development images with required application and operating system configurations specific to each individual program of study.
-\item Capturing laptop physical disks to virtual images using Symantec Ghost and WinPE.
+\item Captured laptop physical disks to virtual images using Symantec Ghost and WinPE.
 \item Systematically deployed software images to thousands of laptops for student use, while monitoring network throughput and server performance to maximize efficiency.\\
 \end{itemize}}
 
@@ -153,11 +162,6 @@ Managed an open source Python redevelopment project of the \textit{OpenBazaar} a
 \cvlistitem{Recreational gamer and chess player.}
 \cvlistitem{Avid learner and personal researcher with a curiosity for all things technology and software related.}
 
-
-% This line dictates that references will be provided if requested
-\begin{center}
-\textit{References available upon request.}
-\end{center}
 
 
 \nocite{*}
