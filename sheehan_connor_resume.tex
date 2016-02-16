@@ -39,6 +39,16 @@
 %   to redefine the bibliography heading string ("Publications")
 %\renewcommand{\refname}{Articles}
 
+%
+% Command to quickly switch between resume and cover letter
+%	\covertrue 	- cover letter
+%	\coverfalse	- resume
+\newif\ifcover
+
+%\covertrue
+\coverfalse
+
+
 % bibliography with mutiple entries
 %\usepackage{multibib}
 %\newcites{book,misc}{{Books},{Others}}
@@ -46,7 +56,7 @@
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
-\iffalse
+\ifcover
 %-----       letter       ---------------------------------------------------------
 % recipient data
 \recipient{Release Engineering Department}{Mozilla Foundation\\366 Adelaide Street West\\Toronto, Ontario\\M5V 1R9}
@@ -75,7 +85,7 @@ Connor Sheehan
 
 \clearpage
 
-\fi
+\else
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
@@ -165,5 +175,5 @@ Managed an open source Python redevelopment project of the \textit{OpenBazaar} a
 \nocite{*}
 \bibliographystyle{plain}
 \bibliography{publications}                        % 'publications' is the name of a BibTeX file
-
+\fi
 \end{document}
